@@ -21,7 +21,7 @@ mkdir -p build
 pushd build
 cmake -DCMAKE_BUILD_TYPE=relwithdebinfo ..
 # cmake --build . --config relwithdebinfo
-make -j4
+make -j$(nproc)
 popd
 
 # popd
